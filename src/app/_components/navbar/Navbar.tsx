@@ -1,12 +1,21 @@
 "use client";
 
+import useWindowWidth from "@/app/_hooks/useWindowWidth";
 import Link from "next/link";
-import React, { use, useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { useEffect, useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import NavigationLinks from "./NavigationLinks";
 
 const Navbar = () => {
+  const pathName = usePathname();
+  const width = useWindowWidth();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const toggleMobileMenu = () => setMobileMenuOpen(!mobileMenuOpen);
+
+  useEffect(() => {
+    if (mobileMenuOpen) setMobileMenuOpen(false);
+  }, [pathName, width]);
 
   return (
     <nav className="w-full border-b border-b-orange-300 p-5 text-orange-300">
@@ -16,29 +25,15 @@ const Navbar = () => {
           <RxHamburgerMenu size={25} />
         </button>
         <ul className="row hidden space-x-10 md:flex">
-          <Link href="#">home</Link>
-          <Link href="#">work</Link>
-          <Link href="#">stack</Link>
-          <Link href="#">about</Link>
+          <NavigationLinks />
         </ul>
       </div>
       <ul
         className={`${
           mobileMenuOpen ? "my-20 max-h-96 opacity-100" : "max-h-0 opacity-0"
-        } space-y-20 overflow-hidden text-center transition-all duration-500 ease-in-out md:flex`}
+        } space-y-20 overflow-hidden text-center transition-all duration-500 ease-in-out`}
       >
-        <Link className="block" href="#">
-          home
-        </Link>
-        <Link className="block" href="#">
-          work
-        </Link>
-        <Link className="block" href="#">
-          stack
-        </Link>
-        <Link className="block" href="#">
-          about
-        </Link>
+        <NavigationLinks />
       </ul>
     </nav>
   );
