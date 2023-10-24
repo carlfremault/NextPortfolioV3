@@ -27,7 +27,7 @@ export default function NavigationLinks() {
     <li key={link.name}>
       <Link
         href={link.href}
-        className={link.href === pathName ? "font-bold text-orange-500" : ""}
+        className={link.href === pathName ? "font-bold text-orange-400" : ""}
       >
         {link.name}
       </Link>
