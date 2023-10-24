@@ -16,8 +16,8 @@ const ContactLinks = () => {
     },
   ];
   return (
-    <div className="my-6 p-5  text-orange-300">
-      <ul className="space-y-6">
+    <div className="mb-6 p-5  text-orange-300">
+      <ul className="space-y-8">
         {contactLinks.map((link) => (
           <li key={link.name}>
             <Link

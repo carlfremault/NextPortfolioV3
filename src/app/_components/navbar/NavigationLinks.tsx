@@ -17,10 +17,6 @@ export default function NavigationLinks() {
       name: "stack",
       href: "/stack",
     },
-    {
-      name: "about",
-      href: "/about",
-    },
   ];
 
   return navLinks.map((link) => (

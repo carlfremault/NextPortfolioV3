@@ -23,7 +23,7 @@ export default function RootLayout({
       >
         <Navbar />
         <div className="flex h-[80vh] flex-col md:flex-row">
-          <div className="mb-6 basis-1/4 border-b border-orange-300 md:border-none">
+          <div className="my-6 box-border basis-1/4 border-b border-orange-300 md:border-none">
             <ContactLinks />
           </div>
           <div className="my-6 basis-3/4 md:border-l md:border-orange-300">
