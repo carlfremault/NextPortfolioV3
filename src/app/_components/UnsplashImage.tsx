@@ -2,24 +2,22 @@ import React from "react";
 import Image from "next/image";
 
 const UnsplashImage = ({
+  className,
   src,
-  width,
-  height,
   alt,
   photographerHref,
   photographerName,
 }: {
+  className: string;
   src: string;
-  width: number;
-  height: number;
   alt: string;
   photographerHref: string;
   photographerName: string;
 }) => {
   return (
-    <div className="relative">
-      <Image src={src} width={width} height={height} alt="" />
-      <p className="absolute bottom-0 right-0 text-sm text-orange-300">
+    <div className={`relative ${className}`}>
+      <Image src={src} alt="" layout="fill" objectFit="cover" />
+      <p className="absolute bottom-0 left-0 origin-top-left -rotate-90 text-sm text-white">
         Photo by{" "}
         <a className="underline" href={photographerHref}>
           {photographerName}
