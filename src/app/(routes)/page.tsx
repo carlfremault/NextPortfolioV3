@@ -2,7 +2,7 @@ import UnsplashImage from "../_components/UnsplashImage";
 
 export default function Home() {
   return (
-    <div className="mb-5 grid w-full grid-cols-1 gap-6 pt-5 leading-10 text-orange-300 md:grid-cols-3 md:px-10">
+    <div className="grid w-full grid-cols-1 gap-6 leading-10 text-orange-300 md:grid-cols-3">
       <div className="col-span-1 md:col-span-3">
         <p className="indent-8">
           <span className="font-serif text-6xl">Hello,</span> I&apos;m Carl, a
@@ -16,7 +16,9 @@ export default function Home() {
         <UnsplashImage
           className="h-96 w-1/2 object-contain md:h-full md:w-full"
           src="/nik-AsRAyHIkOHk-unsplash.jpg"
-          alt=""
+          height={956}
+          width={640}
+          alt="A little germinated plant stands in a pot on a desk. A water bottle and notepad are lying next to it, but are out of focus."
           photographerHref="https://unsplash.com/@helloimnik?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"
           photographerName="Nik"
         />

@@ -25,12 +25,12 @@ export default function RootLayout({
       >
         <Navbar />
         <div className="flex flex-col md:flex-row">
-          <div className="my-6 basis-1/4  border-b border-orange-300 md:border-none">
+          <aside className="my-6 basis-1/4  border-b border-orange-300 md:border-none">
             <ContactLinks />
-          </div>
-          <div className="my-6 basis-3/4 md:border-l md:border-orange-300">
-            {children}
-          </div>
+          </aside>
+          <main className="my-6 basis-3/4 md:border-l md:border-orange-300">
+            <div className="mb-5 pt-5 md:px-10">{children}</div>
+          </main>
         </div>
       </body>
     </html>
