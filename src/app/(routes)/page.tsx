@@ -2,7 +2,7 @@ import UnsplashImage from "../_components/UnsplashImage";
 
 export default function Home() {
   return (
-    <div className="grid w-full grid-cols-1 gap-6 leading-10 text-orange-300 md:grid-cols-3">
+    <div className="grid grid-cols-1 gap-6 leading-10  md:grid-cols-3">
       <div className="col-span-1 md:col-span-3">
         <p className="indent-8">
           <span className="font-serif text-6xl">Hello,</span> I&apos;m Carl, a
