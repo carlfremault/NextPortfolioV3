@@ -1,10 +1,9 @@
 "use client";
 
-import useWindowWidth from "@/app/_hooks/useWindowWidth";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
 import React, { useEffect, useState } from "react";
+import { usePathname } from "next/navigation";
 import { RxHamburgerMenu } from "react-icons/rx";
+import useWindowWidth from "@/app/_hooks/useWindowWidth";
 import NavigationLinks from "./NavigationLinks";
 
 const Navbar = () => {

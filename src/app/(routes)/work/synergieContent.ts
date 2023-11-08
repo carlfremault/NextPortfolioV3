@@ -1,8 +1,4 @@
-import BulletPoints from "@/app/_components/BulletPoints";
-import ImageGrid from "@/app/_components/ImageGrid";
-import React from "react";
-
-const synergieBP: BulletPoint[] = [
+export const synergieBP: BulletPoint[] = [
   {
     title: "React Development",
     text: "Implementing React to create intuitive interfaces from design concepts, continually improving my frontend development skills.",
@@ -21,7 +17,7 @@ const synergieBP: BulletPoint[] = [
   },
 ];
 
-const synergieImages: GridImage[] = [
+export const synergieImages: GridImage[] = [
   {
     src: "/SynergieOurJobIsYourJob.png",
     alt: "The Synergie website front page",
@@ -48,18 +44,10 @@ const synergieImages: GridImage[] = [
   },
 ];
 
-const SynergieContent = () => {
-  return (
-    <div>
-      <p className="mb-8 indent-6">
-        In my role at Synergie Belgium within the Digital Development team, I am
-        dedicated to developing and maintaining various web assets, encompassing
-        websites, web applications, and the intranet platform.
-      </p>
-      <BulletPoints bulletpoints={synergieBP} className="mb-12" />
-      <ImageGrid images={synergieImages} />
-    </div>
-  );
+export const synergieInfo: CollapseHeaderInfo = {
+  name: "synergie",
+  timeFrame: "from October 2022 until now",
+  title: "Frontend Developer React",
+  company: "Synergie Belgium",
+  companyHref: "https://www.synergiejobs.be",
 };
-
-export default SynergieContent;

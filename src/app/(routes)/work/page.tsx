@@ -1,12 +1,17 @@
 import React from "react";
-import Image from "next/image";
 import Collapse from "@/app/_components/Collapse";
-import synergie from "./synergie";
+import Synergie from "./Synergie";
+import { synergieInfo } from "./synergieContent";
 
 const WorkPage = () => {
   return (
     <div className="space-y-12">
-      <Collapse workExperience={synergie} isOpen />
+      <Collapse headerInfo={synergieInfo}>
+        <Synergie />
+      </Collapse>
+      <Collapse headerInfo={synergieInfo}>
+        <Synergie />
+      </Collapse>
     </div>
   );
 };
