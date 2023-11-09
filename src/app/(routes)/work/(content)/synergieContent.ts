@@ -1,3 +1,11 @@
+export const synergieInfo: CollapseHeaderInfo = {
+  name: "synergie",
+  timeFrame: "from October 2022 until now",
+  title: "Frontend Developer React",
+  company: "Synergie Belgium",
+  companyHref: "https://www.synergiejobs.be",
+};
+
 export const synergieBP: BulletPoint[] = [
   {
     title: "React Development",
@@ -5,7 +13,7 @@ export const synergieBP: BulletPoint[] = [
   },
   {
     title: "User Experience Enhancement",
-    text: "I Elevating web properties&apos; functionality to ensure engaging user interaction and visually captivating interfaces, prioritizing a seamless user experience.",
+    text: "Elevating web properties' functionality to ensure engaging user interaction and visually captivating interfaces, prioritizing a seamless user experience.",
   },
   {
     title: "Web Asset Maintenance and Optimization",
@@ -13,7 +21,7 @@ export const synergieBP: BulletPoint[] = [
   },
   {
     title: "Collaborative Learning",
-    text: "Actively engaging with experienced developers to learn and contribute to team projects, fostering a culture of knowledge exchange and collaborative growth..",
+    text: "Actively engaging with experienced developers to learn and contribute to team projects, fostering a culture of knowledge exchange and collaborative growth.",
   },
 ];
 
@@ -43,11 +51,3 @@ export const synergieImages: GridImage[] = [
     width: 1607,
   },
 ];
-
-export const synergieInfo: CollapseHeaderInfo = {
-  name: "synergie",
-  timeFrame: "from October 2022 until now",
-  title: "Frontend Developer React",
-  company: "Synergie Belgium",
-  companyHref: "https://www.synergiejobs.be",
-};
