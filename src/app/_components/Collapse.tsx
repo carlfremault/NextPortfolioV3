@@ -31,9 +31,9 @@ const Collapse = ({
           className={`ms-6 transform transition-transform duration-700 ease-in-out `}
           style={{ transform: `rotate(${caretRotation}deg)` }}
         />
-        <div className="space-y-4 text-right">
-          <p className="text-sm italic">{timeFrame}</p>
-          <h2 className="font-serif text-xl">{title}</h2>
+        <div className="text-right">
+          <p className="mb-2 text-sm italic">{timeFrame}</p>
+          <h2 className="mb-1 font-serif text-xl">{title}</h2>
           <a
             href={companyHref}
             target="_blank"
@@ -46,7 +46,7 @@ const Collapse = ({
       </div>
       <div
         className={`${
-          open ? "max-h-[60rem] opacity-100" : "my-0 max-h-0 opacity-0"
+          open ? "max-h-[165rem] opacity-100" : "my-0 max-h-0 opacity-0"
         }  overflow-hidden transition-all duration-700 ease-in-out`}
       >
         <div className="pt-10">{children}</div>
