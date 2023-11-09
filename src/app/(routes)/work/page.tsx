@@ -1,7 +1,9 @@
 import React from "react";
 import Collapse from "@/app/_components/Collapse";
-import Synergie from "./Synergie";
-import { synergieInfo } from "./synergieContent";
+import Synergie from "./(content)/Synergie";
+import { synergieInfo } from "./(content)/synergieContent";
+import { faibrikInfo } from "./(content)/faibrikContent";
+import Faibrik from "./(content)/Faibrik";
 
 const WorkPage = () => {
   return (
@@ -9,8 +11,8 @@ const WorkPage = () => {
       <Collapse headerInfo={synergieInfo}>
         <Synergie />
       </Collapse>
-      <Collapse headerInfo={synergieInfo}>
-        <Synergie />
+      <Collapse headerInfo={faibrikInfo}>
+        <Faibrik />
       </Collapse>
     </div>
   );
