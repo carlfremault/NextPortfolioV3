@@ -8,7 +8,7 @@ const Faibrik = () => {
     <div>
       <p className="mb-10 indent-6">
         During my internship at fAIbrik, I developed a Microsoft Teams
-        application allowing users to subsribe to alert notifications emanating
+        application allowing users to subscribe to alert notifications emanating
         from the fAIbrik web app. I created a standalone bot using Node.js,
         integrating it into the fAIbrik platform via Microsoft Azure. This
         involved implementing features such as the waterfall dialog system,
