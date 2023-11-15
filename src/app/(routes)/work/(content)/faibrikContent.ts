@@ -35,22 +35,10 @@ export const faibrikImages: GridImage[] = [
     width: 622,
   },
   {
-    src: "/faibrikAlerteFatale.png",
-    alt: "",
-    height: 230,
-    width: 541,
-  },
-  {
     src: "/faibrikBienvenue.png",
     alt: "",
     height: 654,
     width: 953,
-  },
-  {
-    src: "/faibrikDesabonnement.png",
-    alt: "",
-    height: 355,
-    width: 973,
   },
   {
     src: "/faibrikMenu.png",
@@ -59,21 +47,9 @@ export const faibrikImages: GridImage[] = [
     width: 971,
   },
   {
-    src: "/faibrikMenu2.png",
-    alt: "",
-    height: 639,
-    width: 557,
-  },
-  {
     src: "/faibrikNouveauClient.png",
     alt: "",
     height: 326,
     width: 625,
-  },
-  {
-    src: "/faibriknouvevt.png",
-    alt: "",
-    height: 373,
-    width: 622,
   },
 ];
