@@ -34,14 +34,18 @@ const Collapse = ({
         <div className="text-right">
           <p className="mb-2 text-sm italic">{timeFrame}</p>
           <h2 className="mb-1 font-serif text-xl">{title}</h2>
-          <a
-            href={companyHref}
-            target="_blank"
-            rel="noreferrer noopener"
-            className="underline"
-          >
-            {company}
-          </a>
+          {companyHref ? (
+            <a
+              href={companyHref}
+              target="_blank"
+              rel="noreferrer noopener"
+              className="underline"
+            >
+              {company}
+            </a>
+          ) : (
+            <p>{company}</p>
+          )}
         </div>
       </div>
       <div

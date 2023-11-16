@@ -4,6 +4,8 @@ import Synergie from "./(content)/Synergie";
 import { synergieInfo } from "./(content)/synergieContent";
 import { faibrikInfo } from "./(content)/faibrikContent";
 import Faibrik from "./(content)/Faibrik";
+import SDI from "./(content)/SDI";
+import { SDIInfo } from "./(content)/SDIContent";
 
 const WorkPage = () => {
   return (
@@ -13,6 +15,9 @@ const WorkPage = () => {
       </Collapse>
       <Collapse headerInfo={faibrikInfo}>
         <Faibrik />
+      </Collapse>
+      <Collapse headerInfo={SDIInfo}>
+        <SDI />
       </Collapse>
     </div>
   );

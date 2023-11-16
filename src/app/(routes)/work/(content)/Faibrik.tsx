@@ -1,7 +1,7 @@
-import BulletPoints from "@/app/_components/BulletPoints";
 import React from "react";
-import { faibrikBP, faibrikImages } from "./faibrikContent";
+import BulletPoints from "@/app/_components/BulletPoints";
 import ImageGrid from "@/app/_components/ImageGrid";
+import { faibrikBP, faibrikImages } from "./faibrikContent";
 
 const Faibrik = () => {
   return (
