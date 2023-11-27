@@ -1,11 +1,8 @@
 import React from "react";
 import Collapse from "@/app/_components/Collapse";
-import Synergie from "./(content)/Synergie";
-import { synergieInfo } from "./(content)/synergieContent";
-import { faibrikInfo } from "./(content)/faibrikContent";
-import Faibrik from "./(content)/Faibrik";
-import SDI from "./(content)/SDI";
-import { SDIInfo } from "./(content)/SDIContent";
+import Synergie, { synergieInfo } from "./(content)/Synergie";
+import Faibrik, { faibrikInfo } from "./(content)/Faibrik";
+import SDI, { SDIInfo } from "./(content)/SDI";
 
 const WorkPage = () => {
   return (
