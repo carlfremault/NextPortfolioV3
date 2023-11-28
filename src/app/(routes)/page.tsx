@@ -1,6 +1,5 @@
 import UnsplashImage from "../_components/UnsplashImage";
 
-// Test comment to activate Vercel deployment?
 export default function Home() {
   return (
     <div className="grid grid-cols-1 gap-6 leading-10  md:grid-cols-3">
