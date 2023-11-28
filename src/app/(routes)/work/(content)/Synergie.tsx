@@ -30,25 +30,25 @@ const synergieBP: BulletPoint[] = [
 
 const synergieImages: GridImage[] = [
   {
-    src: "/SynergieOurJobIsYourJob.png",
+    src: "/SynergieOurJobIsYourJob.jpg",
     alt: "The Synergie website front page",
     height: 994,
     width: 1607,
   },
   {
-    src: "/SynergieApplySpontaneously.png",
+    src: "/SynergieApplySpontaneously.jpg",
     alt: "A form to fill out for users wanting to apply for a job spontaneously",
     height: 994,
     width: 1607,
   },
   {
-    src: "/SynergieOurOffices.png",
+    src: "/SynergieOurOffices.jpg",
     alt: "The 'offices' page where users can view and search offices all accross Belgium",
     height: 994,
     width: 1607,
   },
   {
-    src: "/SynergieFlexiJobs.png",
+    src: "/SynergieFlexiJobs.jpg",
     alt: "The FlexiJobs landing page",
     height: 994,
     width: 1607,

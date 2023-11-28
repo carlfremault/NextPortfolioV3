@@ -26,25 +26,25 @@ const SDIBP: BulletPoint[] = [
 
 const SDIImages: GridImage[] = [
   {
-    src: "/SDI.png",
+    src: "/SDI.jpg",
     alt: "Hero of the Sport Data Intelligence website frontpage",
     height: 742,
     width: 1284,
   },
   {
-    src: "/SDIMarches.png",
+    src: "/SDIMarches.jpg",
     alt: "Bottom part of the Sport Data Intelligence website including footer",
     height: 1591,
     width: 1920,
   },
   {
-    src: "/SDIContact.png",
+    src: "/SDIContact.jpg",
     alt: "Contact page of the Sport Data Intelligence website including OpenStreetmaps plugin",
     height: 1807,
     width: 1920,
   },
   {
-    src: "/SDIConnect.png",
+    src: "/SDIConnect.jpg",
     alt: "Login page to access the Sport Data Intelligence website backoffice",
     height: 1141,
     width: 1920,
