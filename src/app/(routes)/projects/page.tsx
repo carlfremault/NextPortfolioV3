@@ -1,0 +1,27 @@
+import Collapse from "@/app/_components/Collapse";
+import React from "react";
+import ReactPlayground, {
+  reactPlaygroundInfo,
+} from "./(content)/ReactPlayground";
+import FrontendMentor, {
+  frontendMentorInfo,
+} from "./(content)/Frontend Mentor challenges";
+import SymfonyWebApp, { symfonyWebAppInfo } from "./(content)/SymfonyWebApp";
+
+const ProjectsPage = () => {
+  return (
+    <div className="space-y-12">
+      <Collapse headerInfo={reactPlaygroundInfo}>
+        <ReactPlayground />
+      </Collapse>
+      <Collapse headerInfo={frontendMentorInfo}>
+        <FrontendMentor />
+      </Collapse>
+      <Collapse headerInfo={symfonyWebAppInfo}>
+        <SymfonyWebApp />
+      </Collapse>
+    </div>
+  );
+};
+
+export default ProjectsPage;
