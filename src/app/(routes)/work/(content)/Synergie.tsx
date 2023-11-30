@@ -2,7 +2,6 @@ import BulletPoints from "@/app/_components/BulletPoints";
 import ImageGrid from "@/app/_components/ImageGrid";
 
 export const synergieInfo: CollapseHeaderInfo = {
-  name: "synergie",
   timeFrame: "from October 2022 until now",
   title: "Frontend Developer React",
   company: "Synergie Belgium",
@@ -30,25 +29,25 @@ const synergieBP: BulletPoint[] = [
 
 const synergieImages: GridImage[] = [
   {
-    src: "/SynergieOurJobIsYourJob.jpg",
+    src: "/images/SynergieOurJobIsYourJob.jpg",
     alt: "The Synergie website front page",
     height: 994,
     width: 1607,
   },
   {
-    src: "/SynergieApplySpontaneously.jpg",
+    src: "/images/SynergieApplySpontaneously.jpg",
     alt: "A form to fill out for users wanting to apply for a job spontaneously",
     height: 994,
     width: 1607,
   },
   {
-    src: "/SynergieOurOffices.jpg",
+    src: "/images/SynergieOurOffices.jpg",
     alt: "The 'offices' page where users can view and search offices all accross Belgium",
     height: 994,
     width: 1607,
   },
   {
-    src: "/SynergieFlexiJobs.jpg",
+    src: "/images/SynergieFlexiJobs.jpg",
     alt: "The FlexiJobs landing page",
     height: 994,
     width: 1607,
@@ -63,7 +62,7 @@ const Synergie = (): JSX.Element => {
         dedicated to developing and maintaining various web assets, encompassing
         websites, web applications, and the intranet platform.
       </p>
-      <BulletPoints bulletpoints={synergieBP} />
+      <BulletPoints bulletpoints={synergieBP} className="mb-20" />
       <ImageGrid images={synergieImages} />
     </>
   );
