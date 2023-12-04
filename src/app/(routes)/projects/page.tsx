@@ -18,11 +18,11 @@ const ProjectsPage = () => {
       <Collapse headerInfo={frontendMentorInfo}>
         <FrontendMentor />
       </Collapse>
-      <Collapse headerInfo={symfonyWebAppInfo}>
-        <SymfonyWebApp />
-      </Collapse>
       <Collapse headerInfo={cSharpAppInfo}>
         <CSharpApp />
+      </Collapse>
+      <Collapse headerInfo={symfonyWebAppInfo}>
+        <SymfonyWebApp />
       </Collapse>
     </div>
   );

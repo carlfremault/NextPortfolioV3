@@ -65,6 +65,22 @@ const StackPage = () => {
         <div className="mb-12 flex items-center justify-center md:justify-end">
           <h2 className="text-right font-serif text-xl">Academic experience</h2>
         </div>
+        <div className="mb-10">
+          <a
+            href="https://www.onisep.fr/ressources/univers-formation/formations/Post-bac/bts-services-informatiques-aux-organisations-option-b-solutions-logicielles-et-applications-metiers"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            <p>
+              September 2020 -June 2022: Brevet Technicien Supérieur (France)
+            </p>
+            <p>
+              Services informatiques aux organisations - option Solutions
+              Logicielles et Applications Métier
+            </p>
+          </a>
+        </div>
         <div className="flex w-full flex-col items-center">
           <div className="grid grid-cols-1 gap-12 md:grid-cols-2 lg:grid-cols-3">
             <div>

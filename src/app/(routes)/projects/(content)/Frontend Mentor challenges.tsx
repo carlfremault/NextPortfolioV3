@@ -38,8 +38,8 @@ const FrontendMentor = (): JSX.Element => {
   return (
     <>
       <p className="mb-10 indent-6">
-        While looking for my first developer job, aside from working on some
-        courses, I did a couple of the{" "}
+        While looking for my first developer job, aside from working on React
+        and Javascript courses, I did a couple of the{" "}
         <a
           href="https://www.frontendmentor.io/"
           target="_blank"
