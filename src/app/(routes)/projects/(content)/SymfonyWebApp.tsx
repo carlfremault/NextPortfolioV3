@@ -24,7 +24,7 @@ const symfonyWebAppBulletpoints: BulletPoint[] = [
   },
 ];
 
-const SymfonyWebAppImages: GridImage[] = [
+const symfonyWebAppImages: GridImage[] = [
   {
     src: "/images/A1Bienvenue.png",
     alt: "Front page of the app, promoting the two last publications",
@@ -85,7 +85,7 @@ const SymfonyWebApp = (): JSX.Element => {
         />
         <VerticalActionButtons actions={actions} />
       </div>
-      <ImageGrid images={SymfonyWebAppImages} />
+      <ImageGrid images={symfonyWebAppImages} />
     </>
   );
 };

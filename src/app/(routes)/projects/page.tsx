@@ -7,6 +7,7 @@ import FrontendMentor, {
   frontendMentorInfo,
 } from "./(content)/Frontend Mentor challenges";
 import SymfonyWebApp, { symfonyWebAppInfo } from "./(content)/SymfonyWebApp";
+import CSharpApp, { cSharpAppInfo } from "./(content)/CSharpApp";
 
 const ProjectsPage = () => {
   return (
@@ -19,6 +20,9 @@ const ProjectsPage = () => {
       </Collapse>
       <Collapse headerInfo={symfonyWebAppInfo}>
         <SymfonyWebApp />
+      </Collapse>
+      <Collapse headerInfo={cSharpAppInfo}>
+        <CSharpApp />
       </Collapse>
     </div>
   );
