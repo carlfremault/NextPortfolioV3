@@ -3,7 +3,6 @@ import BulletPoints from "@/app/_components/BulletPoints";
 import ImageGrid from "@/app/_components/ImageGrid";
 
 export const SDIInfo: CollapseHeaderInfo = {
-  name: "SDI",
   timeFrame: "from 24 May until 2 July 2021",
   title: "Frontend Developer Internship",
   company: "Sport Data Intelligence - Annecy, France",
@@ -26,25 +25,25 @@ const SDIBP: BulletPoint[] = [
 
 const SDIImages: GridImage[] = [
   {
-    src: "/SDI.jpg",
+    src: "/images/SDI.jpg",
     alt: "Hero of the Sport Data Intelligence website frontpage",
     height: 742,
     width: 1284,
   },
   {
-    src: "/SDIMarches.jpg",
+    src: "/images/SDIMarches.jpg",
     alt: "Bottom part of the Sport Data Intelligence website including footer",
     height: 1591,
     width: 1920,
   },
   {
-    src: "/SDIContact.jpg",
+    src: "/images/SDIContact.jpg",
     alt: "Contact page of the Sport Data Intelligence website including OpenStreetmaps plugin",
     height: 1807,
     width: 1920,
   },
   {
-    src: "/SDIConnect.jpg",
+    src: "/images/SDIConnect.jpg",
     alt: "Login page to access the Sport Data Intelligence website backoffice",
     height: 1141,
     width: 1920,
@@ -61,7 +60,7 @@ const SDI = () => {
         company&apos;s new showcase website, laying the foundation for my
         practical experience in JavaScript, React, Next.js, and Material-UI.
       </p>
-      <BulletPoints bulletpoints={SDIBP} />
+      <BulletPoints bulletpoints={SDIBP} className="mb-20" />
       <ImageGrid images={SDIImages} />
     </div>
   );

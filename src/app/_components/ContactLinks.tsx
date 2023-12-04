@@ -20,7 +20,7 @@ const ContactLinks = () => {
       <ul className="space-y-8">
         {contactLinks.map((link) => (
           <li key={link.name}>
-            <Link
+            <a
               href={link.href}
               target="_blank"
               rel="noreferrer"
@@ -28,7 +28,7 @@ const ContactLinks = () => {
             >
               {link.logo}
               <span className="">{link.name}</span>
-            </Link>
+            </a>
           </li>
         ))}
       </ul>

@@ -15,7 +15,7 @@ export default function Home() {
       <div className="min-h-96 w-100 col-span-1 flex justify-center md:justify-start">
         <UnsplashImage
           className="h-96 w-1/2 object-contain md:h-full md:w-full"
-          src="/nik-AsRAyHIkOHk-unsplash.jpg"
+          src="/images/nik-AsRAyHIkOHk-unsplash.jpg"
           height={956}
           width={640}
           alt="A little germinated plant stands in a pot on a desk. A water bottle and notepad are lying next to it, but are out of focus."

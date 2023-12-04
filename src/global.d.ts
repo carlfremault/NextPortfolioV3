@@ -1,13 +1,13 @@
 interface CollapseHeaderInfo {
-  name: string;
   timeFrame: string;
   title: string;
-  company: string;
+  company?: string;
   companyHref?: string;
+  tech?: string;
 }
 
 interface BulletPoint {
-  title: string;
+  title?: string;
   text: string;
 }
 
@@ -16,4 +16,11 @@ interface GridImage {
   height: number;
   width: number;
   alt: string;
+}
+
+interface ActionButton {
+  text: string;
+  href: string;
+  logo: JSX.Element;
+  internal?: boolean;
 }

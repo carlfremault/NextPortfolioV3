@@ -3,7 +3,6 @@ import BulletPoints from "@/app/_components/BulletPoints";
 import ImageGrid from "@/app/_components/ImageGrid";
 
 export const faibrikInfo: CollapseHeaderInfo = {
-  name: "faibrik",
   timeFrame: "from 15 November until 31 December 2021",
   title: "Full-Stack Developer Internship",
   company: "fAIbrik - Annecy, France",
@@ -27,32 +26,32 @@ const faibrikBP: BulletPoint[] = [
 
 const faibrikImages: GridImage[] = [
   {
-    src: "/faibrikAbout.png",
-    alt: "",
+    src: "/images/faibrikAbout.png",
+    alt: "MS Teams app store page detailing the fAIbrik app",
     height: 637,
     width: 764,
   },
   {
-    src: "/faibrikAlerte.png",
-    alt: "",
+    src: "/images/faibrikAlerte.png",
+    alt: "A MS Teams alert from the app",
     height: 373,
     width: 622,
   },
   {
-    src: "/faibrikBienvenue.png",
-    alt: "",
+    src: "/images/faibrikBienvenue.png",
+    alt: "The app welcome dialogua, proposing to connect to the user's fAIbrik account and to subscribe to the alerts",
     height: 654,
     width: 953,
   },
   {
-    src: "/faibrikMenu.png",
-    alt: "",
+    src: "/images/faibrikMenu.png",
+    alt: "A menu detailing the app's possibilities: connecting, disconnecting and (un)subscribing to alerts",
     height: 343,
     width: 971,
   },
   {
-    src: "/faibrikNouveauClient.png",
-    alt: "",
+    src: "/images/faibrikNouveauClient.png",
+    alt: "When a user indicated not being a fAIbrik client yet, (s)he is invited to visit the company's website",
     height: 326,
     width: 625,
   },
@@ -72,7 +71,7 @@ const Faibrik = () => {
         Additionally, I worked with tools like Ngrok, Postman, Auth0, and
         followed Agile methodology using Trello and Gitlab.
       </p>
-      <BulletPoints bulletpoints={faibrikBP} />
+      <BulletPoints bulletpoints={faibrikBP} className="mb-20" />
       <ImageGrid images={faibrikImages} />
     </div>
   );
