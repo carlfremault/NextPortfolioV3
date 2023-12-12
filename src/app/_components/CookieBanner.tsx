@@ -5,7 +5,7 @@ import { getLocalStorage, setLocalStorage } from "../utils/localStorage";
 import { useState, useEffect } from "react";
 
 export default function CookieBanner() {
-  const [cookieConsent, setCookieConsent] = useState<boolean | null>(null);
+  const [cookieConsent, setCookieConsent] = useState<boolean | null>(false);
 
   // Get consent in case it's stored in local storage
   useEffect(() => {
@@ -38,12 +38,8 @@ export default function CookieBanner() {
                         }`}
     >
       <div className="text-center">
-        <Link href="/info/cookies">
-          <p>
-            This site uses Google Analytics to understand how you use it. This
-            involves collecting anonymous data about your browsing behavior.
-          </p>
-        </Link>
+        This site uses Google Analytics to understand how you use it. This
+        involves collecting anonymous data about your browsing behavior.
       </div>
 
       <div className="flex gap-2">
