@@ -52,7 +52,7 @@ const Collapse = ({
       </div>
       <div
         className={`${
-          open ? "max-h-[165rem] opacity-100" : "my-0 max-h-0 opacity-0"
+          open ? "max-h-[265rem] opacity-100" : "my-0 max-h-0 opacity-0"
         }  overflow-hidden transition-all duration-700 ease-in-out`}
       >
         <div className="pt-10">{children}</div>
