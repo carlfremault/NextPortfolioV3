@@ -12,35 +12,26 @@ const synergieBP: BulletPointsWithTitle[] = [
   {
     title: "Frontend",
     bulletpoints: [
+      "Development based on Figma designs",
+      "Landing pages",
+      "User account pages",
+      "User account settings",
+      "Similar jobs page (on 404 job not found)",
+      "Thank you page",
+      "Agencies map: react-google-maps",
+      "GDPR Form",
       "Intranet homepage",
       "Blog pages, likes",
       "Messaging: recipients, React-RTE, …",
       "Data widgets",
       "Ticketing pages via Topdesk API",
-      "User account pages",
-      "User account settings",
-      "Similar jobs page (on 404 job not found)",
-      "Thank you page",
       "Registration flow",
-      "GDPR Form",
-      "Agencies map: react-google-maps",
-      "Landing pages",
-      "Development based on Figma designs",
       "Responsiveness",
       "A11y (Accessibility)",
       "GA tracking consent (cookies & context)",
       "Update Bootstrap v4 -> v5",
       "Convert JS(x) files to TS(x)",
       "Refactorings (e.g. code repetitions)",
-    ],
-  },
-  {
-    title: "FE Styling",
-    bulletpoints: [
-      "CSS incl. basic animations (spinners, buttons)",
-      "Bootstrap",
-      "Reactstrap",
-      "Landing page with parallax effect",
     ],
   },
   {
@@ -65,6 +56,24 @@ const synergieBP: BulletPointsWithTitle[] = [
       "Implementation of account creation & login",
       "Favorites, saved searches, applications",
       "Deferring user actions until after login/account creation (including session storage)",
+    ],
+  },
+  {
+    title: "SEO",
+    bulletpoints: [
+      "GSC monitoring",
+      "Page titles, summaries, keywords",
+      "Structured data",
+    ],
+  },
+  {
+    title: "FE Styling",
+    bulletpoints: [
+      "CSS incl. basic animations (spinners, buttons)",
+      "Sass (7-1)",
+      "Bootstrap",
+      "Reactstrap",
+      "Landing page with parallax effect",
     ],
   },
   {
@@ -102,14 +111,6 @@ const synergieBP: BulletPointsWithTitle[] = [
   {
     title: "External APIs",
     bulletpoints: ["Using Postman for developing/debugging"],
-  },
-  {
-    title: "SEO",
-    bulletpoints: [
-      "GSC monitoring",
-      "Page titles, summaries, keywords",
-      "Structured data",
-    ],
   },
   {
     title: "Proceedings",
