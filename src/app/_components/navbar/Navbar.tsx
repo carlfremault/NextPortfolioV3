@@ -20,7 +20,11 @@ const Navbar = () => {
     <nav className="w-full border-b border-b-orange-300 p-5 text-orange-300">
       <div className="flex items-center justify-between">
         <h1 className="text-lg">Carl Fremault, web developer</h1>
-        <button onClick={toggleMobileMenu} className="block md:hidden">
+        <button
+          onClick={toggleMobileMenu}
+          aria-label="mobile menu"
+          className="block md:hidden"
+        >
           <RxHamburgerMenu size={25} />
         </button>
         <ul className="row hidden space-x-10 md:flex">
