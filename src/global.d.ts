@@ -11,6 +11,11 @@ interface BulletPoint {
   text: string;
 }
 
+interface BulletPointsWithTitle {
+  title: string;
+  bulletpoints: string[];
+}
+
 interface GridImage {
   src: string;
   height: number;
