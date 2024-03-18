@@ -26,30 +26,26 @@ export default function Home() {
       <div className="col-span-1 space-y-8 md:col-span-2">
         <p>
           Driven by my love for coding, all things digital, and my relentless
-          curiosity, my journey is marked by a commitment to continuous{" "}
-          <span className="font-serif text-3xl">growth</span>. The challenges
-          I&apos;ve encountered have only fueled my determination to adapt and
-          thrive in this dynamic field.
+          curiosity, my journey is marked by a commitment to continuous growth.
+          The challenges I&apos;ve encountered have only fueled my determination
+          to adapt and thrive in this dynamic field.
         </p>
         <p>
           Along the way, I&apos;ve come to appreciate the beauty of web
-          development and its profound{" "}
-          <span className="font-serif text-3xl">potential</span> to enhance the
-          lives of individuals. Technology and web applications, when
-          thoughtfully crafted, have the power to simplify tasks, amplify
-          productivity, and connect people in innovative ways. It&apos;s this
-          belief in the transformative impact of technology that fuels my
-          dedication.
+          development and its profound potential to enhance the lives of
+          individuals. Technology and web applications, when thoughtfully
+          crafted, have the power to simplify tasks, amplify productivity, and
+          connect people in innovative ways. It&apos;s this belief in the
+          transformative impact of technology that fuels my dedication.
         </p>
       </div>
       <div className="col-span-1 md:col-span-3">
         <p>
           While I may not claim expertise in any particular area just yet,
-          I&apos;m unwavering in my pursuit of excellence and my goal to{" "}
-          <span className="font-serif text-3xl">evolve</span> into a full-stack
-          developer. I&apos;m actively seeking opportunities to contribute my
-          evolving skills and collaborative spirit to your projects. Let&apos;s
-          connect and shape the digital future together!
+          I&apos;m unwavering in my pursuit of excellence and my goal to evolve
+          into a full-stack developer. I&apos;m actively seeking opportunities
+          to contribute my evolving skills and collaborative spirit to your
+          projects. Let&apos;s connect and shape the digital future together!
         </p>
       </div>
     </div>
