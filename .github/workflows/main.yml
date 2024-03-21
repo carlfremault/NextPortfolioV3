@@ -10,7 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: 'Create env file'
+        env: 
+          NEXT_PUBLIC_GOOGLE_ID: ${{ secrets.NEXT_PUBLIC_GOOGLE_ID }}
         run: |
           touch .env
-          echo "${{ secrets.NEXT_PUBLIC_GOOGLE_ID }}" > .env
+          echo env.NEXT_PUBLIC_GOOGLE_ID > .env
           cat .env
