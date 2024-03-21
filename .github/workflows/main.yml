@@ -1,0 +1,1 @@
+echo "${{secrets.NEXT_PUBLIC_GOOGLE_ID }}" > .env
