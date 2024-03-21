@@ -1,5 +1,6 @@
 import { getCookieConsentValue, Cookies } from "react-cookie-consent";
-export const GA_TRACKING_ID = process.env.NEXT_PUBLIC_GOOGLE_ID;
+
+export const GA_TRACKING_ID = "G-9L4QCTY633";
 
 export const pageview = (url) => {
   if (
