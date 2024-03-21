@@ -1,1 +1,16 @@
-echo "${{secrets.NEXT_PUBLIC_GOOGLE_ID }}" > .env
+name: Env workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Create env file'
+        run: |
+          touch .env
+          echo "${{ secrets.NEXT_PUBLIC_GOOGLE_ID }}" > .env
+          cat .env
