@@ -33,3 +33,7 @@ interface ActionButton {
 interface Window {
   gtag: any;
 }
+
+interface CookiesContext {
+  setGATrackingConsent: (consent: boolean) => void;
+}

@@ -1,71 +1,42 @@
 "use client";
 
-import Link from "next/link";
-import { getLocalStorage, setLocalStorage } from "../utils/localStorage";
-import { useState, useEffect } from "react";
+import CC from "react-cookie-consent";
+import { useCookies } from "../_context/CookiesContext";
 
 export default function CookieBanner() {
-  const [cookieConsent, setCookieConsent] = useState<boolean | null>(false);
+  const { setGATrackingConsent } = useCookies();
 
-  // Get consent in case it's stored in local storage
-  useEffect(() => {
-    const storedCookieConsent = getLocalStorage("cfportfolio_cookie_consent");
-
-    setCookieConsent(storedCookieConsent);
-  }, [setCookieConsent]);
-
-  // Update GA consent
-  useEffect(() => {
-    const newValue = cookieConsent ? "granted" : "denied";
-
-    window.gtag("consent", "update", {
-      analytics_storage: newValue,
-    });
-  }, [cookieConsent]);
-
-  const handleConsent = (consent: boolean) => {
-    setCookieConsent(consent);
-    setLocalStorage("cfportfolio_cookie_consent", consent);
+  const handleSubmit = (consent: boolean) => {
+    setGATrackingConsent(consent);
   };
 
   return (
-    <div
-      className={`fixed bottom-0 left-0 right-0
-                        mx-auto my-10 max-w-max 
-                        flex-col items-center justify-between gap-4 rounded-lg bg-gray-700 px-3 py-3 text-orange-300  
-                        shadow md:max-w-screen-sm md:px-4 ${
-                          cookieConsent != null ? "hidden" : "flex"
-                        }`}
+    <CC
+      disableStyles
+      onAccept={() => handleSubmit(true)}
+      onDecline={() => handleSubmit(false)}
+      enableDeclineButton
+      buttonText="Allow"
+      declineButtonText="Decline"
+      containerClasses="fixed bottom-0 left-0 right-0 mx-auto my-10 max-w-max flex-col items-center justify-between gap-4 rounded-lg bg-gray-700 px-3 py-3 text-orange-300 shadow md:max-w-screen-sm md:px-4"
+      buttonClasses="rounded-md border border-orange-300 px-5 py-2 text-orange-300"
+      declineButtonClasses="rounded-md border border-orange-300 px-5 py-2 text-orange-300"
+      buttonWrapperClasses="flex gap-6 justify-center"
     >
       <div className="text-center">
         This site uses Google Analytics to understand how you use it. This
         involves collecting anonymous data about your browsing behavior.
       </div>
-
-      <div className="flex gap-2">
+      <div className="my-6 text-center underline">
         <a
           href="https://blog.google/around-the-globe/google-europe/google-analytics-facts/"
-          className=""
+          className="center"
           target="_blank"
           rel="noreferrer"
         >
-          <button className="rounded-md border border-orange-300 px-5 py-2 text-orange-300">
-            More info
-          </button>
+          More info
         </a>
-        <button
-          className="rounded-md border border-orange-300 px-5 py-2 text-orange-300"
-          onClick={() => handleConsent(false)}
-        >
-          Decline
-        </button>
-        <button
-          className="rounded-lg border border-orange-300 bg-gray-900 px-5 py-2 text-orange-300"
-          onClick={() => handleConsent(true)}
-        >
-          Allow
-        </button>
       </div>
-    </div>
+    </CC>
   );
 }
