@@ -43,8 +43,8 @@ export default function Home() {
         <p>
           While I may not claim expertise in any particular area just yet,
           I&apos;m unwavering in my pursuit of excellence and my goal to evolve
-          into a full-stack developer. I&apos;m actively seeking opportunities
-          to contribute my evolving skills and collaborative spirit to your
+          as a full-stack developer. I&apos;m actively seeking opportunities to
+          contribute my evolving skills and collaborative spirit to your
           projects. Let&apos;s connect and shape the digital future together!
         </p>
       </div>
