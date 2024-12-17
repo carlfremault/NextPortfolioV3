@@ -2,7 +2,7 @@ import BulletPointsWithTitle from "@/app/_components/BulletPointsWithTitle";
 import ImageGrid from "@/app/_components/ImageGrid";
 
 export const synergieInfo: CollapseHeaderInfo = {
-  timeFrame: "from October 2022 until now",
+  timeFrame: "from October 2022 until June 2024",
   title: "Frontend Developer React",
   company: "Synergie Belgium",
   companyHref: "https://www.synergiejobs.be",
@@ -155,14 +155,14 @@ const Synergie = (): JSX.Element => {
   return (
     <>
       <p className="mb-10 indent-6">
-        At Synergie Belgium, within the Digital Development team, I am dedicated
-        to developing and maintaining our various websites, web applications,
-        and the intranet platform.
+        At Synergie Belgium, within the Digital Development team, I was
+        dedicated to developing and maintaining the various websites, web
+        applications, and the intranet platform.
       </p>
       <p className="mb-10 indent-6">
-        My role involves implementing intuitive interfaces from Figma designs
+        My role involved implementing intuitive interfaces from Figma designs
         with React, continually refining my frontend development skills.
-        Additionally, I focus on ensuring continuous maintenance, improvement,
+        Additionally, I focused on ensuring continuous maintenance, improvement,
         and optimization of existing assets to sustain their functionality and
         performance.
       </p>
