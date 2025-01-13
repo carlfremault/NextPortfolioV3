@@ -1,7 +1,7 @@
 import BulletPointsWithTitle from "@/app/_components/BulletPointsWithTitle";
 
 export const kaironInfo: CollapseHeaderInfo = {
-  timeFrame: "from July until December 2024",
+  timeFrame: "from July 2024",
   title: "Full-stack Developer",
   company: "Kairon Labs",
   companyHref: "https://www.kaironlabs.com",
