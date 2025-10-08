@@ -154,7 +154,7 @@ const synergieImages: GridImage[] = [
 const Synergie = (): JSX.Element => {
   return (
     <>
-      <p className="mb-10 indent-6">
+      <p className="mb-6 indent-6">
         At Synergie Belgium, within the Digital Development team, I was
         dedicated to developing and maintaining the various websites, web
         applications, and the intranet platform.
