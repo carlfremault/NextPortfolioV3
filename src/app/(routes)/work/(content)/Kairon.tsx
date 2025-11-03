@@ -1,7 +1,7 @@
 import BulletPointsWithTitle from "@/app/_components/BulletPointsWithTitle";
 
 export const kaironInfo: CollapseHeaderInfo = {
-  timeFrame: "from July 2024 until October 2025",
+  timeFrame: "from July 2024 until November 2025",
   title: "Full-stack Developer",
   company: "Kairon Labs",
   companyHref: "https://www.kaironlabs.com",
@@ -12,28 +12,19 @@ const kaironBP: BulletPointsWithTitle[] = [
     title: "Frontend",
     bulletpoints: [
       "React",
-      "NextJS",
+      "Next.js",
       "TypeScript",
-      "React-Query",
-      "Tanstack Table",
+      "React Query",
+      "TanStack Table",
       "Zustand",
+      "React Hook Form",
+      "Tailwind CSS",
+      "TanStack Router",
     ],
   },
   {
-    title: "FE Styling",
-    bulletpoints: ["TailwindCSS"],
-  },
-  {
-    title: "Forms",
-    bulletpoints: ["React Hook Form"],
-  },
-  {
-    title: "Routing",
-    bulletpoints: ["Tanstack Location"],
-  },
-  {
     title: "Backend",
-    bulletpoints: ["Python", "Flask"],
+    bulletpoints: ["Python", "Flask", "AWS Lambda", "AWS EventBridge"],
   },
   {
     title: "Database",
@@ -45,25 +36,26 @@ const Kairon = (): JSX.Element => {
   return (
     <>
       <p className="mb-6 indent-6">
-        While employed at Kairon Labs, I primarily worked on three key projects:
+        During my time at Kairon Labs, I focused on building robust internal
+        tools and APIs to streamline operations.
       </p>
       <p className="mb-6 indent-6">
-        First, I developed an internal interface that allowed the Legal team to
-        verify crypto wallets using the Chainalysis API. Wallet addresses and
-        assessments were stored in the company’s SQL database, and periodic
-        verifications were automated using AWS EventBridge and Lambda functions.
+        I Developed an internal platform for the Legal team to verify crypto
+        wallets using the Chainalysis API. Wallet data and assessment results
+        were stored in the company&apo;s SQL database, with periodic
+        re-verifications automated via AWS EventBridge and Lambda.
       </p>
       <p className="mb-6 indent-6">
-        Next, I built a dashboard that consolidated large volumes of data into a
-        single, filterable table to support traders in their decision-making.
-        The data was fetched and processed from multiple tables within the
-        company’s SQL database.
+        Then I built an end-of-day reporting dashboard that consolidated large
+        datasets from multiple SQL tables into a single, filterable table. This
+        tool enabled traders to efficiently analyze and act on key data points.
       </p>
       <p className="mb-10 indent-6">
-        Finally, I designed and implemented a new API from scratch to handle
-        communication with various crypto exchanges, eliminating our dependency
-        on the ccxt package. This API was built with Python and Flask and
-        structured using an Abstract Base Class architecture.
+        Finally, I designed and implemented a new API from the ground up to
+        handle communication with multiple crypto exchanges, removing the
+        dependency on the ccxt library. Built with Python and Flask, the system
+        leveraged an Abstract Base Class architecture for scalability and
+        maintainability.
       </p>
       <div>
         {kaironBP.map((bp) => (
