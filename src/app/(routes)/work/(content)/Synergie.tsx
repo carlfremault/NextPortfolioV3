@@ -1,3 +1,4 @@
+import BulletPoints from "@/app/_components/BulletPoints";
 import BulletPointsWithTitle from "@/app/_components/BulletPointsWithTitle";
 import ImageGrid from "@/app/_components/ImageGrid";
 
@@ -8,119 +9,60 @@ export const synergieInfo: CollapseHeaderInfo = {
   companyHref: "https://www.synergiejobs.be",
 };
 
-const synergieBP: BulletPointsWithTitle[] = [
+const synergieTasksBP: BulletPoint[] = [
   {
-    title: "Frontend",
-    bulletpoints: [
-      "Development based on Figma designs",
-      "Landing pages",
-      "User account pages",
-      "User account settings",
-      "Similar jobs page (on 404 job not found)",
-      "Thank you page",
-      "Agencies map: react-google-maps",
-      "GDPR Form",
-      "Intranet homepage",
-      "Blog pages, likes",
-      "Messaging: recipients, React-RTE, …",
-      "Data widgets",
-      "Ticketing pages via Topdesk API",
-      "Registration flow",
-      "Responsiveness",
-      "A11y (Accessibility)",
-      "GA tracking consent (cookies & context)",
-      "Update Bootstrap v4 -> v5",
-      "Convert JS(x) files to TS(x)",
-      "Refactorings (e.g. code repetitions)",
-    ],
+    title: "Frontend Development",
+    text: "Built and maintained landing pages, user account pages, intranet homepage, blog pages, and interactive widgets using React and Next.js. Ensured responsiveness, accessibility, GA tracking, and smooth user interactions.",
   },
   {
-    title: "Forms",
-    bulletpoints: [
-      "FE: React, Formik",
-      "BE: Node.js",
-      "Input validation: Zod, Yup, Joi",
-      "React-select dropdowns",
-      "React-phone-number-input",
-      "Debounced search",
-      "File uploads",
-    ],
+    title: "Forms & User Accounts",
+    text: " Implemented registration flows, account creation/login, favorites, saved searches, and applications. Managed forms with React, Formik, and backend validation (Node.js, Zod, Yup, Joi).",
   },
   {
-    title: "Routing",
-    bulletpoints: ["Next.js (pages router)", "React-router-dom"],
+    title: "Styling & UI",
+    text: "Applied CSS, Sass, Bootstrap/Reactstrap, animations, and parallax effects to enhance UX.",
   },
   {
-    title: "User account handling",
-    bulletpoints: [
-      "Implementation of account creation & login",
-      "Favorites, saved searches, applications",
-      "Deferring user actions until after login/account creation (including session storage)",
-    ],
-  },
-  {
-    title: "SEO",
-    bulletpoints: [
-      "GSC monitoring",
-      "Page titles, summaries, keywords",
-      "Structured data",
-    ],
-  },
-  {
-    title: "FE Styling",
-    bulletpoints: [
-      "CSS incl. basic animations (spinners, buttons)",
-      "Sass (7-1)",
-      "Bootstrap",
-      "Reactstrap",
-      "Landing page with parallax effect",
-    ],
-  },
-  {
-    title: "Emailing",
-    bulletpoints: ["Creation and use of dynamic Sendgrid email templates."],
-  },
-  {
-    title: "Internationalization",
-    bulletpoints: ["I18n"],
-  },
-  {
-    title: "Backend",
-    bulletpoints: [
-      "Node.js",
-      "Adding/modifying routes",
-      "Validation",
-      "Scripts, cron jobs",
-    ],
+    title: "Backend & APIs",
+    text: "Developed and modified Node.js routes, scheduled scripts/cron jobs, and integrated external APIs (Topdesk, Firebase).",
   },
   {
     title: "Databases",
+    text: "Worked with SQL, Sequelize, MongoDB, and Firebase to store, retrieve, and manage application data.",
+  },
+  {
+    title: "SEO & Internationalization",
+    text: "Monitored Google Search Console, optimized page metadata, structured data, and implemented I18n for multi-language support.",
+  },
+  {
+    title: "Monitoring & Error Handling",
+    text: "Logged and tracked errors using Sentry and followed up on issues.",
+  },
+];
+
+const synergieStackBP: BulletPointsWithTitle[] = [
+  {
+    title: "Frontend",
     bulletpoints: [
-      "SQL, Sequelize",
-      "MongoDB",
-      "Compass",
-      "Azure Data Studio",
-      "MySQL Workbench",
-      "Firebase",
+      "React",
+      "Next.js",
+      "TypeScript",
+      "Formik",
+      "CSS/Sass",
+      "Bootstrap/Reactstrap",
     ],
   },
   {
-    title: "Error handling",
-    bulletpoints: ["Logging: Sentry", "Following up on Sentry errors"],
+    title: "Backend & APIs",
+    bulletpoints: ["Node.js", "Express.js", "Topdesk", "Sendgrid"],
   },
   {
-    title: "External APIs",
-    bulletpoints: ["Using Postman for developing/debugging"],
+    title: "Database",
+    bulletpoints: ["SQL/Sequelize", "MongoDB", "Firebase"],
   },
   {
-    title: "Proceedings",
-    bulletpoints: ["Topdesk ticketing", "Gitlab, Gitflow"],
-  },
-  {
-    title: "Data Input",
-    bulletpoints: [
-      "Creation and follow up of procedures in our custom web applications.",
-    ],
+    title: "Other",
+    bulletpoints: ["Git, Gitlab", "Jenkins", "Sentry", "Postman"],
   },
 ];
 
@@ -155,19 +97,14 @@ const Synergie = (): JSX.Element => {
   return (
     <>
       <p className="mb-6 indent-6">
-        At Synergie Belgium, within the Digital Development team, I was
-        dedicated to developing and maintaining the various websites, web
-        applications, and the intranet platform.
+        At Synergie Belgium, I developed and maintained the different brand
+        websites, web applications, and the intranet platform, translating Figma
+        designs into intuitive, responsive, and accessible interfaces while
+        optimizing existing systems.
       </p>
-      <p className="mb-10 indent-6">
-        My role involved implementing intuitive interfaces from Figma designs
-        with React, continually refining my frontend development skills.
-        Additionally, I focused on ensuring continuous maintenance, improvement,
-        and optimization of existing assets to sustain their functionality and
-        performance.
-      </p>
-      <div>
-        {synergieBP.map((bp) => (
+      <BulletPoints bulletpoints={synergieTasksBP} className="mb-20" />
+      <div className="mx-6 grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-3">
+        {synergieStackBP.map((bp) => (
           <BulletPointsWithTitle
             key={bp.title}
             content={bp}
