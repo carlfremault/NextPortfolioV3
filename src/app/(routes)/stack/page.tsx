@@ -13,41 +13,49 @@ const StackPage = () => {
         <div className="flex w-full flex-col items-center">
           <div className="grid w-full grid-cols-1 gap-12 px-6 md:grid-cols-2 lg:grid-cols-3">
             <div>
-              <h3 className="mb-3">Javascript</h3>
+              <h3 className="mb-3">Front end</h3>
               <ul className="list-inside list-disc">
                 <li>React</li>
                 <li>Next.js</li>
                 <li>Typescript</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-3">Back end</h3>
+              <ul className="list-inside list-disc">
                 <li>Node.js</li>
                 <li>Express.js</li>
+                <li>Python</li>
+                <li>Flask</li>
               </ul>
             </div>
             <div>
               <h3 className="mb-3">HTML, CSS</h3>
               <ul className="list-inside list-disc">
-                <li>Sass</li>
+                <li>Tailwind</li>
                 <li>Bootstrap</li>
                 <li>Reactstrap</li>
                 <li>Material UI</li>
+                <li>Sass</li>
               </ul>
             </div>
             <div>
               <h3 className="mb-3">Databases</h3>
               <ul className="list-inside list-disc">
+                <li>SQL, MariaDB, T-SQL</li>
                 <li>MongoDB</li>
-                <li>MongoDB Compass</li>
-                <li>SQL, Transact-SQL</li>
-                <li>Azure Data Studio</li>
                 <li>MySQL Workbench</li>
+                <li>Azure Data Studio</li>
                 <li>Sequelize</li>
               </ul>
             </div>
             <div>
-              <h3 className="mb-3">Validation</h3>
+              <h3 className="mb-3">Packages</h3>
               <ul className="list-inside list-disc">
-                <li>Joi</li>
-                <li>Zod</li>
-                <li>Yup</li>
+                <li>React Query</li>
+                <li>Tanstack Table</li>
+                <li>React Hook Form, Formik</li>
+                <li>Validation: Joi, Zod, Yup</li>
               </ul>
             </div>
             <div>
@@ -56,7 +64,8 @@ const StackPage = () => {
                 <li>Git, Gitlab</li>
                 <li>ESLint, Prettier</li>
                 <li>Sentry</li>
-                <li>Formik</li>
+                <li>AWS Lambda</li>
+                <li>AWS Eventbridge</li>
               </ul>
             </div>
           </div>
