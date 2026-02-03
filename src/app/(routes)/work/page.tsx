@@ -1,4 +1,3 @@
-import React from "react";
 import Collapse from "@/app/_components/Collapse";
 import Synergie, { synergieInfo } from "./(content)/Synergie";
 import Faibrik, { faibrikInfo } from "./(content)/Faibrik";

@@ -1,11 +1,10 @@
 import Link from "next/link";
-import React from "react";
 
 const VerticalActionButtons = ({
   actions,
 }: {
   actions: ActionButton[];
-}): JSX.Element => {
+}) => {
   return (
     <div className="flex flex-col items-center space-y-6  p-16 lg:justify-start">
       {actions.map(({ text, href, logo, internal }) => {

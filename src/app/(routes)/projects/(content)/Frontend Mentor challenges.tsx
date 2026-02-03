@@ -34,7 +34,7 @@ const actionsTwo: ActionButton[] = [
   },
 ];
 
-const FrontendMentor = (): JSX.Element => {
+const FrontendMentor = () => {
   return (
     <>
       <p className="mb-10 indent-6">
