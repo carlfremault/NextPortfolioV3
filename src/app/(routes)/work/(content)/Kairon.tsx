@@ -48,7 +48,7 @@ const kaironStackBP: BulletPointsWithTitle[] = [
   },
 ];
 
-const Kairon = (): JSX.Element => {
+const Kairon = () => {
   return (
     <>
       <p className="mb-6 indent-6">

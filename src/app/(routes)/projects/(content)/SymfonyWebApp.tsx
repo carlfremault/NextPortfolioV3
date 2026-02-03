@@ -1,7 +1,5 @@
 import BulletPoints from "@/app/_components/BulletPoints";
 import ImageGrid from "@/app/_components/ImageGrid";
-import Image from "next/image";
-import Link from "next/link";
 import { RxGithubLogo, RxLink2 } from "react-icons/rx";
 import { FaRegFilePdf } from "react-icons/fa6";
 import VerticalActionButtons from "@/app/_components/VerticalActionButtons";
@@ -71,7 +69,7 @@ const actions: ActionButton[] = [
   },
 ];
 
-const SymfonyWebApp = (): JSX.Element => {
+const SymfonyWebApp = () => {
   return (
     <>
       <p className="mb-10 indent-6 lg:mb-0">

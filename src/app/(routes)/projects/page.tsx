@@ -1,5 +1,4 @@
 import Collapse from "@/app/_components/Collapse";
-import React from "react";
 import FrontendMentor, {
   frontendMentorInfo,
 } from "./(content)/Frontend Mentor challenges";

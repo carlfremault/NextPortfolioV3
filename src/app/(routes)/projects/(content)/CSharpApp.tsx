@@ -1,7 +1,6 @@
 import BulletPoints from "@/app/_components/BulletPoints";
 import ImageGrid from "@/app/_components/ImageGrid";
 import VerticalActionButtons from "@/app/_components/VerticalActionButtons";
-import React from "react";
 import { FaRegFilePdf } from "react-icons/fa6";
 import { RxGithubLogo } from "react-icons/rx";
 
@@ -70,7 +69,7 @@ const actions: ActionButton[] = [
   },
 ];
 
-const CSharpApp = (): JSX.Element => {
+const CSharpApp = () => {
   return (
     <>
       <p className="mb-10 indent-6 lg:mb-0">

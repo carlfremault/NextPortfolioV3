@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import Image from "next/image";
 import { RxCross1 } from "react-icons/rx";
 

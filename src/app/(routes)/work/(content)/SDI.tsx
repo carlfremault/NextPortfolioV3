@@ -1,4 +1,3 @@
-import React from "react";
 import BulletPoints from "@/app/_components/BulletPoints";
 import ImageGrid from "@/app/_components/ImageGrid";
 
