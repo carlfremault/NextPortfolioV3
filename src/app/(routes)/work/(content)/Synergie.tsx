@@ -93,7 +93,7 @@ const synergieImages: GridImage[] = [
   },
 ];
 
-const Synergie = (): JSX.Element => {
+const Synergie = () => {
   return (
     <>
       <p className="mb-6 indent-6">

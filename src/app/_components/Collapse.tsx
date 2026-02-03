@@ -1,14 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
-import { RxCaretDown, RxCaretUp } from "react-icons/rx";
+import { ReactNode, useState } from "react";
+import { RxCaretDown } from "react-icons/rx";
 
 const Collapse = ({
   headerInfo,
   children,
 }: {
   headerInfo: CollapseHeaderInfo;
-  children: JSX.Element;
+  children: ReactNode;
 }) => {
   const [open, setOpen] = useState(false);
   const [caretRotation, setCaretRotation] = useState(0);

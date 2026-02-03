@@ -1,4 +1,3 @@
-import React from "react";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 
 const StackPage = () => {
@@ -13,40 +12,45 @@ const StackPage = () => {
         <div className="flex w-full flex-col items-center">
           <div className="grid w-full grid-cols-1 gap-12 px-6 md:grid-cols-2 lg:grid-cols-3">
             <div>
-              <h3 className="mb-3">Front end</h3>
+              <h3 className="mb-3">Languages</h3>
               <ul className="list-inside list-disc">
-                <li>React</li>
-                <li>Next.js</li>
-                <li>Typescript</li>
+                <li>TypeScript</li>
+                <li>JavaScript</li>
+                <li>Python</li>
+                <li>HTML5</li>
+                <li>CSS3</li>
               </ul>
             </div>
             <div>
-              <h3 className="mb-3">Back end</h3>
+              <h3 className="mb-3">Frontend</h3>
+              <ul className="list-inside list-disc">
+                <li>React.js</li>
+                <li>Next.js</li>
+                <li>Tailwind CSS</li>
+                <li>Bootstrap</li>
+                <li>Material UI</li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="mb-3">Backend</h3>
               <ul className="list-inside list-disc">
                 <li>Node.js</li>
+                <li>NestJS</li>
                 <li>Express.js</li>
-                <li>Python</li>
                 <li>Flask</li>
+                <li>REST API</li>
+                <li>Microservices Architecture</li>
               </ul>
             </div>
             <div>
-              <h3 className="mb-3">HTML, CSS</h3>
+              <h3 className="mb-3">Databases & ORM</h3>
               <ul className="list-inside list-disc">
-                <li>Tailwind</li>
-                <li>Bootstrap</li>
-                <li>Reactstrap</li>
-                <li>Material UI</li>
-                <li>Sass</li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="mb-3">Databases</h3>
-              <ul className="list-inside list-disc">
-                <li>SQL, MariaDB, T-SQL</li>
-                <li>MongoDB</li>
-                <li>MySQL Workbench</li>
-                <li>Azure Data Studio</li>
+                <li>PostgreSQL</li>
+                <li>MariaDB</li>
+                <li>T-SQL</li>
+                <li>Prisma</li>
                 <li>Sequelize</li>
+                <li>MongoDB</li>
               </ul>
             </div>
             <div>
@@ -59,13 +63,17 @@ const StackPage = () => {
               </ul>
             </div>
             <div>
-              <h3 className="mb-3">Tools</h3>
+              <h3 className="mb-3">DevOps & Tooling</h3>
               <ul className="list-inside list-disc">
-                <li>Git, Gitlab</li>
-                <li>ESLint, Prettier</li>
+                <li>Docker</li>
+                <li>Turborepo</li>
+                <li>Vitest</li>
+                <li>Git</li>
+                <li>AWS Lambda, Eventbridge</li>
+                <li>Jenkins</li>
+                <li>Postman</li>
                 <li>Sentry</li>
-                <li>AWS Lambda</li>
-                <li>AWS Eventbridge</li>
+                <li>CodeRabbit</li>
               </ul>
             </div>
           </div>

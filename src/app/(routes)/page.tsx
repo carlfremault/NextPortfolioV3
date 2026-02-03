@@ -10,7 +10,7 @@ export default function Home() {
           years of hands-on experience in building web applications.
         </p>
       </div>
-      <div className="w-100 col-span-1 flex min-h-96 justify-center md:justify-start">
+      <div className="w-full col-span-1 flex min-h-96 justify-center md:justify-start">
         <UnsplashImage
           className="h-96 w-1/2 object-contain md:h-full md:w-full"
           src="/images/nik-AsRAyHIkOHk-unsplash.jpg"
