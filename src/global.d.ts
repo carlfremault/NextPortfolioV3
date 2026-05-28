@@ -29,11 +29,3 @@ interface ActionButton {
   logo: JSX.Element;
   internal?: boolean;
 }
-
-interface Window {
-  gtag: any;
-}
-
-interface CookiesContext {
-  setGATrackingConsent: (consent: boolean) => void;
-}

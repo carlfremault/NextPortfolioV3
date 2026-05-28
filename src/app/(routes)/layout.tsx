@@ -3,9 +3,6 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import Navbar from "../_components/navbar/Navbar";
 import ContactLinks from "../_components/ContactLinks";
-import GoogleAnalytics from "../_components/GoogleAnalytics";
-import CookieBanner from "../_components/CookieBanner";
-import CookiesContextProvider from "../_context/CookiesContext";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -24,9 +21,7 @@ export default function RootLayout({
       <body
         className={`${inter.className} mx-auto max-w-7xl content-center bg-slate-900 px-10 py-5`}
       >
-        <CookiesContextProvider>
-          <GoogleAnalytics />
-          <Navbar />
+        <Navbar />
           <div className="flex flex-col md:flex-row">
             <aside className="my-6 basis-1/4  border-b border-orange-300 md:border-none">
               <ContactLinks />
@@ -37,8 +32,6 @@ export default function RootLayout({
               </div>
             </main>
           </div>
-          <CookieBanner />
-        </CookiesContextProvider>
       </body>
     </html>
   );
