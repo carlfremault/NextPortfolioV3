@@ -1,0 +1,50 @@
+{
+  "name": "Next Portfolio V3",
+  "dockerComposeFile": "../docker-compose.yml",
+  "service": "dev-container",
+  "workspaceFolder": "/workspaces/NextPortfolioV3",
+  "mounts": [
+    "source=NextPortfolioV3-node-modules-v24,target=${containerWorkspaceFolder}/node_modules,type=volume",
+    "source=NextPortfolioV3-extensions-v24,target=/home/node/.vscode-server/extensions,type=volume", // VSCode extensions
+    "source=NextPortfolioV3-claude-code,target=/home/node/.claude,type=volume" // Claude Code settings + memory
+  ],
+  "containerEnv": {
+    "SHELL": "/usr/bin/zsh",
+    "YARN_CACHE_FOLDER": "/home/node/.cache/yarn",
+    "YARN_ENABLE_TELEMETRY": "0",
+    "CLAUDE_CODE_AUTO_CONNECT_IDE": "true"
+  },
+  "forwardPorts": [3000],
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "bradlc.vscode-tailwindcss",
+        "redhat.vscode-yaml",
+        "ms-azuretools.vscode-docker",
+        "coderabbit.coderabbit-vscode",
+        "codeium.codeium",
+        "anthropic.claude-code"
+      ],
+      "settings": {
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+        },
+        "js/ts.updateImportsOnFileMove.enabled": "always",
+        "remote.autoForwardPortsSource": "hybrid",
+        "terminal.integrated.defaultProfile.linux": "zsh",
+        "terminal.integrated.profiles.linux": {
+          "zsh": {
+            "path": "/usr/bin/zsh",
+            "args": ["-l"]
+          }
+        }
+      }
+    }
+  },
+  "postCreateCommand": "corepack yarn install",
+  "remoteUser": "node"
+}

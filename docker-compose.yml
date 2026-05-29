@@ -1,0 +1,24 @@
+services:
+  dev-container:
+    build:
+      context: .
+      dockerfile: .devcontainer/Dockerfile
+    volumes:
+      - .:/workspaces/NextPortfolioV3:cached
+      - NextPortfolioV3-cache:/home/node/.cache/yarn
+    networks:
+      - app-network
+    init: true
+    command: sleep infinity
+
+networks:
+  app-network:
+    driver: bridge
+
+volumes:
+  NextPortfolioV3-cache:
+    name: NextPortfolioV3-cache
+  NextPortfolioV3-node-modules-v24:
+    name: NextPortfolioV3-node-modules-v24
+  NextPortfolioV3-extensions-v24:
+    name: NextPortfolioV3-extensions-v24
