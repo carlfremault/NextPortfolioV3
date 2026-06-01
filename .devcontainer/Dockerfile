@@ -14,8 +14,9 @@ RUN apt-get update && apt-get install -y zsh iputils-ping netcat-openbsd && \
     corepack enable && corepack prepare yarn@4.11.0 --activate && \
     mkdir -p /home/node/.vscode-server/extensions \
              /home/node/.cache/yarn \
-             /workspaces/NextPortfolioV3/node_modules && \
-    chown -R node:node /home/node /workspaces/NextPortfolioV3 && \
+             /workspaces/NextPortfolioV3/node_modules \
+             /home/node/.claude && \
+    chown -R node:node /home/node /workspaces/NextPortfolioV3 /home/node/.claude && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
 

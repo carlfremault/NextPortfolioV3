@@ -10,7 +10,11 @@ const ImageGrid = ({ images }: { images: GridImage[] }) => {
 
   const toggleModal = (e: any) => {
     e.stopPropagation();
-    setIndexShown(+e.target.dataset.index);
+    if (!showModal) {
+      const index = e.target.dataset.index;
+      if (index === undefined) return;
+      setIndexShown(+index);
+    }
     setShowModal((prev) => !prev);
   };
 
@@ -37,7 +41,6 @@ const ImageGrid = ({ images }: { images: GridImage[] }) => {
       onKeyDown={handleKeyDown}
       role="button"
       tabIndex={0}
-      className="cursor-pointer"
     >
       <ModalCarousel
         images={images}
@@ -49,7 +52,7 @@ const ImageGrid = ({ images }: { images: GridImage[] }) => {
       <div className="mb-20 columns-1 gap-2 md:columns-2">
         {images.map((image, index) => (
           <Image
-            className="mb-2 w-full"
+            className={`mb-2 cursor-pointer ${image.height > image.width ? "mx-auto max-h-64 w-auto" : "w-full"}`}
             key={image.src}
             src={image.src}
             alt={image.alt}

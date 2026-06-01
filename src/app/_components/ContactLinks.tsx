@@ -1,4 +1,5 @@
 import { RxGithubLogo, RxLinkedinLogo } from "react-icons/rx";
+import { MdHiking } from "react-icons/md";
 
 const ContactLinks = () => {
   const contactLinks = [
@@ -12,9 +13,15 @@ const ContactLinks = () => {
       href: "https://www.linkedin.com/in/carl-fremault/",
       logo: <RxLinkedinLogo size={20} className="me-2" />,
     },
+    {
+      name: "PackYourBag!",
+      href: "https:/packyourbag.me",
+      logo: <MdHiking size={20} className="me-2" />,
+    },
   ];
+
   return (
-    <div className="mb-6 p-5  text-orange-300">
+    <div className="mb-6 p-5 text-orange-300">
       <ul className="space-y-8">
         {contactLinks.map((link) => (
           <li key={link.name}>
