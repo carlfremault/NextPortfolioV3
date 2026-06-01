@@ -10,6 +10,10 @@ export default function NavigationLinks() {
       href: "/",
     },
     {
+      name: "about",
+      href: "/about",
+    },
+    {
       name: "work",
       href: "/work",
     },
