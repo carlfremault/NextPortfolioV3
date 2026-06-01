@@ -8,7 +8,7 @@ const BulletPoints = ({
   return (
     <ul className={`ms-6 list-outside list-disc space-y-6 ${className}`}>
       {bulletpoints.map(({ title, text }) => (
-        <li key={title}>
+        <li key={text}>
           {title && (
             <span className="font-bold">
               {title}

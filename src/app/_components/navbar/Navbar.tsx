@@ -19,7 +19,13 @@ const Navbar = () => {
   return (
     <nav className="w-full border-b border-b-orange-300 p-5 text-orange-300">
       <div className="flex items-center justify-between">
-        <h1 className="text-lg">Carl Fremault, web developer</h1>
+        <h1 className="hidden text-lg md:block">
+          Carl Fremault, Full Stack developer
+        </h1>
+        <div className="text-lg md:hidden">
+          <h1>Carl Fremault</h1>
+          <p>Full Stack developer</p>
+        </div>
         <button
           onClick={toggleMobileMenu}
           aria-label="mobile menu"
@@ -33,7 +39,7 @@ const Navbar = () => {
       </div>
       <ul
         className={`${
-          mobileMenuOpen ? "my-20 max-h-96 opacity-100" : "max-h-0 opacity-0"
+          mobileMenuOpen ? "my-20 max-h-full opacity-100" : "max-h-0 opacity-0"
         } space-y-20 overflow-hidden text-center transition-all duration-500 ease-in-out`}
       >
         <NavigationLinks />

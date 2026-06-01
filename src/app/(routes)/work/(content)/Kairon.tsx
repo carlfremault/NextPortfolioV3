@@ -27,9 +27,9 @@ const kaironStackBP: BulletPointsWithTitle[] = [
   {
     title: "Frontend",
     bulletpoints: [
+      "TypeScript",
       "React",
       "Next.js",
-      "TypeScript",
       "React Query",
       "TanStack Table",
       "Zustand",

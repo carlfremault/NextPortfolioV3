@@ -44,9 +44,9 @@ const synergieStackBP: BulletPointsWithTitle[] = [
   {
     title: "Frontend",
     bulletpoints: [
+      "TypeScript",
       "React",
       "Next.js",
-      "TypeScript",
       "Formik",
       "CSS/Sass",
       "Bootstrap/Reactstrap",
